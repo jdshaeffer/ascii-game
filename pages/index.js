@@ -12,6 +12,7 @@ const Home = () => {
       }
     }
     else if (e.key === 'ArrowDown') {
+      if (y )
       setY(y + 10)
     }
     else if (e.key === 'ArrowLeft') {
@@ -25,7 +26,6 @@ const Home = () => {
   }
 
   useEffect(() => {
-    // check arrow key presses
     document.onkeydown = checkKey;
   })
 
